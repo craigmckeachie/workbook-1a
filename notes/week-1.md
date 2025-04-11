@@ -49,7 +49,7 @@
 - `git init` - initializes a repository in your current directory
   - adds a `.git` folder
 
-![git add commands](image.png)
+![git add](./images/git-add.png)
 
 ## Create Repository on Github
 
