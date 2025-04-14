@@ -28,8 +28,8 @@ public class FormatString {
 //        System.out.println(message2);
 
 
-        float grossPay = 5239.77f;
-        System.out.printf("Gross Pay: $%.2f", grossPay);
+        float grossPay = 5239.77123f;
+        System.out.printf("Gross Pay: %.2f", grossPay);
 
 
     }
