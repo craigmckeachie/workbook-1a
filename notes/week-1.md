@@ -79,3 +79,130 @@
 6. JDK: Amazon Corretto 17
 7. Uncheck add sample code
 8. Advanced Settings: GroupId: com.companyname ArtifactId:project name
+
+# Java
+
+## Print
+
+Print out to the screen. Output.
+
+```Java
+System.out.println("Hello World");
+
+//Hello World
+```
+
+## Variable
+
+Store information in a variable. Remember something using the computer's memory.
+
+```java
+String message = "Hello World";
+System.out.println(message);
+
+//Hello World
+```
+
+## Build String
+
+Build a string dynamically (using variables) to display a message.
+
+#### Example 1
+```java
+String firstName = "Shiraaz";
+String message = "Hello ";
+System.out.println(message + firstName);
+
+// Hello Shiraaz
+```
+
+#### Example 2
+```java
+String firstName = "Shiraaz";
+System.out.println("Hello " + firstName);
+
+// Hello Shiraaz
+```
+
+#### Example 3
+```java
+String firstName = "James";
+String lastName = "Bond";
+System.out.println("Hello " + firstName + " " + lastName);
+// Hello James Bond
+```
+
+## Format String
+
+Build a more complicated string and format some of the dynamic variables in the string.
+
+#### Example 1
+```java
+int x = 2;
+int y = 2;
+
+int sum = x + y;
+
+System.out.println("2 + 2 = 4");
+System.out.println(x + " + " + y  + " = " + sum);
+
+//2 + 2 = 4
+```
+
+#### Example 2
+```java
+int x = 2;
+int y = 2;
+
+int sum = x + y;
+
+String message = String.format("%d + %d = %d", x, y, sum);
+System.out.println(message);
+
+//2 + 2 = 4
+```
+
+#### Example 3
+```java
+int x = 2;
+int y = 2;
+
+int sum = x + y;
+
+System.out.printf("%d + %d = %d", x, y, sum);
+
+//2 + 2 = 4
+
+```
+
+
+#### Example 4
+```java
+int x = 2;
+int y = 2;
+
+int sum = x + y;
+
+
+char operator = '+';
+String message2 = String.format("%d %c %d = %d", x, operator, y, sum);
+System.out.println(message2);
+
+//2 + 2 = 4
+```
+
+#### Example 5
+```java
+float grossPay = 5239.77f;
+System.out.printf("Gross Pay: $%.2f", grossPay);
+
+// Gross Pay: $5239.77
+
+```
+
+
+>  ### Format string type characters
+> - `f` for a float or double (has decimal places)
+> - `d` for an int or long (whole numbers)
+> - `s` for string
+> - `c` for character

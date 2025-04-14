@@ -21,11 +21,15 @@ public class FormatString {
         System.out.println(message);
 
 
-        System.out.printf("%d + %d = %d", x,y, sum);
+        System.out.printf("%d + %d = %d \n", x,y, sum);
 
 //        char operator = '+';
 //        String message2 = String.format("%d %c %d = %d", x,operator,y, sum);
 //        System.out.println(message2);
+
+
+        float grossPay = 5239.77f;
+        System.out.printf("Gross Pay: $%.2f", grossPay);
 
 
     }
