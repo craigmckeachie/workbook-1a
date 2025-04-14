@@ -108,6 +108,7 @@ System.out.println(message);
 Build a string dynamically (using variables) to display a message.
 
 #### Example 1
+
 ```java
 String firstName = "Shiraaz";
 String message = "Hello ";
@@ -117,6 +118,7 @@ System.out.println(message + firstName);
 ```
 
 #### Example 2
+
 ```java
 String firstName = "Shiraaz";
 System.out.println("Hello " + firstName);
@@ -125,6 +127,7 @@ System.out.println("Hello " + firstName);
 ```
 
 #### Example 3
+
 ```java
 String firstName = "James";
 String lastName = "Bond";
@@ -137,6 +140,7 @@ System.out.println("Hello " + firstName + " " + lastName);
 Build a more complicated string and format some of the dynamic variables in the string.
 
 #### Example 1
+
 ```java
 int x = 2;
 int y = 2;
@@ -150,6 +154,7 @@ System.out.println(x + " + " + y  + " = " + sum);
 ```
 
 #### Example 2
+
 ```java
 int x = 2;
 int y = 2;
@@ -163,6 +168,7 @@ System.out.println(message);
 ```
 
 #### Example 3
+
 ```java
 int x = 2;
 int y = 2;
@@ -175,8 +181,8 @@ System.out.printf("%d + %d = %d", x, y, sum);
 
 ```
 
-
 #### Example 4
+
 ```java
 int x = 2;
 int y = 2;
@@ -192,6 +198,7 @@ System.out.println(message2);
 ```
 
 #### Example 5
+
 ```java
 float grossPay = 5239.77f;
 System.out.printf("Gross Pay: $%.2f", grossPay);
@@ -200,9 +207,29 @@ System.out.printf("Gross Pay: $%.2f", grossPay);
 
 ```
 
-
->  ### Format string type characters
+> ### Format string type characters
+>
 > - `f` for a float or double (has decimal places)
 > - `d` for an int or long (whole numbers)
 > - `s` for string
 > - `c` for character
+
+## Input
+
+How to accept input from the user? The user typing on their keyboard?
+
+```java
+Scanner keyboard = new Scanner(System.in);
+System.out.println("Enter first name:");
+String firstName = keyboard.nextLine();
+System.out.println("First Name: " + firstName);
+//System.out.printf("First Name: %s", firstName);
+```
+
+```java
+Scanner keyboard = new Scanner(System.in);
+System.out.println("How old are you?");
+int age = keyboard.nextInt();
+System.out.println("Age: " + age);
+keyboard.nextLine();
+```
