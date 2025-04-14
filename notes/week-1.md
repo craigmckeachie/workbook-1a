@@ -233,3 +233,24 @@ int age = keyboard.nextInt();
 System.out.println("Age: " + age);
 keyboard.nextLine();
 ```
+
+## TODO
+
+In Workbook-1 Intro to Java
+
+- Read Section 3.1
+- Exercises 3.15
+---
+- Read Section 3.2
+- Exercises 3.31
+---
+- Read Section 3.3
+- Exercises 3.47
+---
+- Read Section 3.4
+- Exercises 3.61
+---
+- Read Section 4.1
+- Exercises 4.16
+---
+- Financial Calculators Workshop
