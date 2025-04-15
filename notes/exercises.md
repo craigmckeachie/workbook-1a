@@ -16,3 +16,6 @@
    - call the method from the main method
    - pass two numbers into the parameters of the method
    - catch the return value into a variable and display the return value to the screen in the main method
+
+Use the Bakery example as a reference:
+https://github.com/craigmckeachie/workbook-1a/blob/main/concepts/src/main/java/com/pluralsight/Bakery.java
