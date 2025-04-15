@@ -254,3 +254,10 @@ In Workbook-1 Intro to Java
 - Exercises 4.16
 ---
 - Financial Calculators Workshop
+
+
+## Repositories, Projects, and Classes
+
+- workbook1,workshops- repository
+- workbook1= project (at least)
+- exercise = class(s)
