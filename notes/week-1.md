@@ -80,6 +80,13 @@
 7. Uncheck add sample code
 8. Advanced Settings: GroupId: com.companyname ArtifactId:project name
 
+## Repositories, Projects, and Classes
+
+- workbook-x = create repository
+- workbook-x or exercise-x = create project 
+- exercise-x = create application class(es)
+
+
 # Java
 
 ## Print
@@ -406,8 +413,3 @@ public class DayMessage {
 ```
 
 
-## Repositories, Projects, and Classes
-
-- workbook1,workshops- repository
-- workbook1= project (at least)
-- exercise = class(s)
