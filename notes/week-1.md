@@ -1,3 +1,5 @@
+# Week 1 Notes
+
 # CLI
 
 - Command line interface
