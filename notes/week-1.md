@@ -218,6 +218,8 @@ System.out.printf("Gross Pay: $%.2f", grossPay);
 
 How to accept input from the user? The user typing on their keyboard?
 
+### String Input
+
 ```java
 Scanner keyboard = new Scanner(System.in);
 System.out.println("Enter first name:");
@@ -225,6 +227,8 @@ String firstName = keyboard.nextLine();
 System.out.println("First Name: " + firstName);
 //System.out.printf("First Name: %s", firstName);
 ```
+
+### Numeric Input
 
 ```java
 Scanner keyboard = new Scanner(System.in);
@@ -234,26 +238,172 @@ System.out.println("Age: " + age);
 keyboard.nextLine();
 ```
 
-## TODO
+## Conditionals
 
-In Workbook-1 Intro to Java
 
-- Read Section 3.1
-- Exercises 3.15
+
+## If
+
+
+
+- `if`
+- `if-else`
+- `if-else-if-else`
+
+
+
 ---
-- Read Section 3.2
-- Exercises 3.31
+
+### ✅ Example: `if`
+```java
+public class IfExample {
+    public static void main(String[] args) {
+        int age = 20;
+
+        if (age >= 18) {
+            System.out.println("You are an adult.");
+        }
+    }
+}
+```
+💡 *Use `if` when you only want to do something **if a condition is true**, and you don't need an "otherwise."*
+
 ---
-- Read Section 3.3
-- Exercises 3.47
+
+### ✅ Example: `if-else`
+```java
+public class IfElseExample {
+    public static void main(String[] args) {
+        int age = 16;
+
+        if (age >= 18) {
+            System.out.println("You can vote.");
+        } else {
+            System.out.println("You are too young to vote.");
+        }
+    }
+}
+```
+💡 *Use `if-else` when there are **two possible outcomes** — one if the condition is true, another if it’s false.*
+
 ---
-- Read Section 3.4
-- Exercises 3.61
+
+### ✅ Example: `if-else-if-else`
+```java
+public class IfElseIfExample {
+    public static void main(String[] args) {
+        int score = 85;
+
+        if (score >= 90) {
+            System.out.println("Grade: A");
+        } else if (score >= 80) {
+            System.out.println("Grade: B");
+        } else if (score >= 70) {
+            System.out.println("Grade: C");
+        } else {
+            System.out.println("Grade: F");
+        }
+    }
+}
+```
+💡 *Use `if-else-if-else` when you have **multiple conditions** to check in order.*
+
 ---
-- Read Section 4.1
-- Exercises 4.16
----
-- Financial Calculators Workshop
+
+#### Pattern
+
+```java
+if(condition){ //is true
+    //execution block
+    //another line?
+} 
+```
+
+```java
+if(condition){ //is true
+    //execution block
+    //another line?
+} else {
+    //otherwise execution block
+    //another line?
+}
+```
+
+
+```java
+if(condition){ //is true
+    //execution block
+    //another line?
+} else if(another condition) {
+    //otherwise execution block
+    //another line?
+} else if(another condition) {
+    //otherwise execution block
+    //another line?
+}else{
+  //execution block if none of the conditions are true
+}
+```
+
+
+## Switch
+
+#### If that would be better as switch
+```java
+public class DayMessage {
+    public static void main(String[] args) {
+        String day = "Tuesday";
+
+        if (day.equals("Monday")) {
+            System.out.println("Start of the work week.");
+        } else if (day.equals("Tuesday")) {
+            System.out.println("Second day grind.");
+        } else if (day.equals("Wednesday")) {
+            System.out.println("Midweek hustle.");
+        } else if (day.equals("Thursday")) {
+            System.out.println("Almost there!");
+        } else if (day.equals("Friday")) {
+            System.out.println("Weekend is near.");
+        } else {
+            System.out.println("It's the weekend!");
+        }
+    }
+}
+
+```
+
+#### Equivalent Switch
+
+```java
+public class DayMessage {
+    public static void main(String[] args) {
+        String day = "Tuesday";
+
+        switch (day) {
+            case "Monday":
+                System.out.println("Start of the work week.");
+                break;
+            case "Tuesday":
+                System.out.println("Second day grind.");
+                break;
+            case "Wednesday":
+                System.out.println("Midweek hustle.");
+                break;
+            case "Thursday":
+                System.out.println("Almost there!");
+                break;
+            case "Friday":
+                System.out.println("Weekend is near.");
+                break;
+            default:
+                System.out.println("It's the weekend!");
+                break;
+        }
+    }
+}
+
+
+```
 
 
 ## Repositories, Projects, and Classes
