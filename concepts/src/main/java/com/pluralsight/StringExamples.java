@@ -13,7 +13,7 @@ public class StringExamples {
         String productNum = productCode.substring(dashPosition+1);
         System.out.println(vendor);
         System.out.println(productNum);
-// vendor contains ACME and productNum contains 12213
+       // vendor contains ACME and productNum contains 12213
     }
 
 }

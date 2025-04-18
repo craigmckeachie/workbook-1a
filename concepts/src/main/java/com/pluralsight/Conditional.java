@@ -15,10 +15,5 @@ public class Conditional {
         System.out.println("Price of admission: " + price);
 
 
-        if(){
-
-        }
-
-
     }
 }
